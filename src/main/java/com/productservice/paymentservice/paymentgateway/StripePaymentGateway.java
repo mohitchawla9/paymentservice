@@ -20,9 +20,6 @@ public class StripePaymentGateway implements PaymentGateway {
     @Override
     public String generatePaymentLink(String orderId, Long amount, String phoneNumber, String email) throws StripeException {
         Stripe.apiKey = stripeKey;
-
-
-
         //List<map> lineItems;
 //        PaymentLinkCreateParams params =
 //                PaymentLinkCreateParams.builder()
